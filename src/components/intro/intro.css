@@ -63,6 +63,7 @@ animation: move 10s ease-in-out infinite alternate;
     height: 100%;
     object-fit: cover;
     position: absolute;
+    z-index: 2;
 }
 .i-scroll{
     width: 30px;
@@ -80,7 +81,7 @@ animation: move 10s ease-in-out infinite alternate;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 @media screen and (max-width: 480px){
     .i{
@@ -119,13 +120,14 @@ animation: move 10s ease-in-out infinite alternate;
         position: absolute;
         top: 0;
         right: 0;
-        z-index: -1;
+        z-index: 1;
     }
     .i-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: absolute;
+        z-index: 2;
     }
    
         

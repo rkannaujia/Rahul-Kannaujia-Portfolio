@@ -1,5 +1,5 @@
 .c{
-    height: 120vh;
+    height: 100vh;
     position: relative;
     
 }
@@ -78,7 +78,7 @@ button{
 @media screen and (max-width: 480px) {
 
   .c{
-    height: 120vh;   
+    height: 130vh;   
 }
 
     .c-wrapper {
@@ -93,7 +93,9 @@ button{
       margin: 20px 0px;
       width: 100%;
     }
-  
+  h3{
+    display: none;
+  }
     .c-desc {
       display: none;
     }

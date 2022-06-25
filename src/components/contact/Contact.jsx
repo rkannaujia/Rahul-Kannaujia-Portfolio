@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
@@ -7,6 +7,7 @@ import LinkedIn from "../../img/LinkedIn.png";
 import Github from "../../img/Github.png";
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { ThemeContext } from '../../context';
 
 function Contact() {
 // for submit the form data
@@ -26,6 +27,10 @@ const handleSubmit = (event) => {
           console.log(error.text);
       });
 }
+
+// for changing the mode
+const theme =useContext(ThemeContext);
+const darkMode = theme.state.darkMode;
   return (
     <div className='c'>
         <div className="c-bg"></div>
@@ -35,13 +40,15 @@ const handleSubmit = (event) => {
                 <div className="c-info">
                    {/* For inked-in account */}
                    <div className="c-info-item">
-                     <a href='https://www.linkedin.com/in/rahul-kannaujia-16989919a/' target="_blank" rel="noreferrer">
+                     <a href='https://www.linkedin.com/in/rahul-kannaujia-16989919a/' target="_blank" rel="noreferrer" 
+                      style={{color:darkMode && "white"}}>
                     <img src={LinkedIn} alt="loading" className="c-icon" />
                     LinkedIn</a>
                   </div>
                    {/* for github account */}
                    <div className="c-info-item">
-                   <a href='https://github.com/rkannaujia' target="_blank" rel="noreferrer">
+                   <a href='https://github.com/rkannaujia' target="_blank" rel="noreferrer"
+                   style={{color:darkMode && "white"}}>
                     <img src={Github} alt="loading" className="c-icon" />
                     Github</a>
                   </div>
@@ -63,16 +70,17 @@ const handleSubmit = (event) => {
                 </div>
               </div>
               <div className="c-right">
+                <h2 style={{color:darkMode && "white"}}>You can Contact Me </h2>
                   <p className="c-desc">
-                    <b>You can Contact Me </b>Get in touch. Always available for
-            freelancing if the right project comes along. me.
+                     Always available for
+            freelancing if the right project comes along.
                   </p>
                   {/* contact form */}
                   <form ref={formRef} onSubmit={handleSubmit} >
-                    <input type="text" name="user_name" placeholder='Name' />
-                    <input type="text" name="user_subject" placeholder='Subject' />
-                    <input type="email" name="user_email" placeholder='Email' />
-                    <textarea rows="5"  name='user_message' placeholder='Message' />
+                    <input style={{backgroundColor: darkMode && "#333" ,color:darkMode && "white"}} type="text" name="user_name" placeholder='Name' />
+                    <input style={{backgroundColor: darkMode && "#333",color:darkMode && "white"}} type="text" name="user_subject" placeholder='Subject' />
+                    <input style={{backgroundColor: darkMode && "#333",color:darkMode && "white"}} type="email" name="user_email" placeholder='Email' />
+                    <textarea style={{backgroundColor: darkMode && "#333",color:darkMode && "white"}} rows="5"  name='user_message' placeholder='Message' />
                     <button>Submit</button>
                     {done && "Thank You..."}
                   </form>

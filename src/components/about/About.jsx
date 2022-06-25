@@ -16,7 +16,7 @@ function About() {
         <div className="a-right">
           <div className="a-about">
             <h1 className="a-title">About me</h1>
-            <p className="a-sub">This is Rahul Kannaujia. I have completed BSC(IT) from Mumbai University.Currently i am residing in Mumbai. I am working in a NGO as a Admin. </p>
+            <p className="a-sub">This is Rahul Kannaujia. I have completed BSC(IT) from Mumbai University. Currently i am residing in Mumbai. I am working in a NGO as a Admin. </p>
             </div>
             <div className="a-education">
             <h2 class="a-title">Education</h2>

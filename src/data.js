@@ -1,5 +1,5 @@
 import logo from "../src/img/nikeShoeShop.png";
-
+import quiz from "../src/img/quiz.png";
 
 export const projects= [
     {
@@ -9,8 +9,8 @@ export const projects= [
     },
     {
         id:2,
-        img:"img/Coding.png",
-        link:""
+        img:quiz,
+        link:"https://rk-quiz-app.netlify.app"
     },
     {
         id:3,
