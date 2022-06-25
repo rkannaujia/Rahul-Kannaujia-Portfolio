@@ -70,7 +70,7 @@ const darkMode = theme.state.darkMode;
                 </div>
               </div>
               <div className="c-right">
-                <h2 style={{color:darkMode && "white"}}>You can Contact Me </h2>
+                <h2 style={{color:darkMode && "white"}}>You Can Contact Me </h2>
                   <p className="c-desc">
                      Always available for
             freelancing if the right project comes along.
