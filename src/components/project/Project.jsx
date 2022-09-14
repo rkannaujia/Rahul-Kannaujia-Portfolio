@@ -10,7 +10,7 @@ function Project({img,link}) {
         <div className="p-circle"></div>
       </div>
       <a href={link} target="_blank" rel="noreferrer">
-        <img src={img} alt="Upcoming Project" className="p-img" />
+        <img src={img} alt="error while loading" className="p-img" />
         </a>
     </div>
     
