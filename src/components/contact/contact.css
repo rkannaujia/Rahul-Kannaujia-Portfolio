@@ -1,5 +1,5 @@
 .c{
-    height: 100vh;
+    height: 130vh;
     position: relative;
     
 }
@@ -76,9 +76,14 @@ button{
     border-radius: 4px;
 }
 @media screen and (max-width: 480px) {
+  .c{
+    height: 130vh;
+    position: relative;
+    }
 
   .c-bg{
-    height: 130vh;   
+    height: 100%;  
+    position: absolute; 
 }
 
     .c-wrapper {
