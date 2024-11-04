@@ -40,7 +40,7 @@ const darkMode = theme.state.darkMode;
                 <div className="c-info">
                    {/* For inked-in account */}
                    <div className="c-info-item">
-                     <a href='https://www.linkedin.com/in/rahul-kannaujia-16989919a/' target="_blank" rel="noreferrer" 
+                     <a href='https://www.linkedin.com/in/rahul-kannaujia-01232b336/' target="_blank" rel="noreferrer" 
                       style={{color:darkMode && "white"}}>
                     <img src={LinkedIn} alt="loading" className="c-icon" />
                     LinkedIn</a>
